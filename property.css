@@ -1,14 +1,13 @@
-/* Property Section */
+*{
+
+
+}
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
-
-
-
 .properties {
   padding: 40px 20px;
   background: #f9f9f9;
@@ -86,10 +85,14 @@ nav ul li a.active {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.property:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
-}
+  .property:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px) rotate(1deg);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
 
 .property img {
   width: 100%;
