@@ -53,8 +53,13 @@ header nav ul li a {
 
 header nav ul li a:hover,
 header nav ul li a.active {
-  background: #555;
+  /* background: #555; */
   border-radius: 5px;
+  /* text-decoration: underline; */
+}
+a:hover{
+  /* background-color: #0b2134; */
+  text-decoration: underline;
 }
 
 /* About Section */

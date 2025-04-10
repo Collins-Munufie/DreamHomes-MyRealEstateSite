@@ -187,3 +187,19 @@ button:hover {
   background: #f9f9f9;
   align-items: center;
 }
+.email {
+  align-items: center;
+  text-align: center;
+  background-color: #14527a;
+  height: 50px;
+  padding-top: 15px;
+  color: #fff;
+}
+.email a {
+  text-decoration: none;
+  color: #f0eded;
+
+}
+.email a :hover {
+  background-color: #000000;
+}
