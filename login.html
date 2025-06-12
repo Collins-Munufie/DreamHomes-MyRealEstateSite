@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Dream Homes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/estate.css">
+    <style>
+      .login-container {
+        max-width: 400px;
+        margin: 60px auto;
+        padding: 2rem;
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      }
+      .login-container h2 {
+        text-align: center;
+        margin-bottom: 1.5rem;
+      }
+      .login-container label {
+        display: block;
+        margin-bottom: 0.5rem;
+      }
+      .login-container input[type="text"],
+      .login-container input[type="password"] {
+        width: 100%;
+        padding: 0.5rem;
+        margin-bottom: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+      .login-container button {
+        width: 100%;
+        padding: 0.7rem;
+        background: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        font-size: 1rem;
+        cursor: pointer;
+      }
+      .login-container button:hover {
+        background: #0056b3;
+      }
+      .login-container .register-link {
+        display: block;
+        text-align: center;
+        margin-top: 1rem;
+      }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login to Dream Homes</h2>
+        <form id="loginForm">
+            <label for="username">Username or Email</label>
+            <input type="text" id="username" name="username" required>
+            
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+            
+            <button type="submit">Login</button>
+        </form>
+        <a class="register-link" href="#">Don't have an account? Register</a>
+    </div>
+    <script>
+      document.getElementById('loginForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        const password = document.getElementById('password').value;
+        if (password === '12345') {
+          window.location.href = 'estate.html';
+        } else {
+          alert('Incorrect password. Please try again.');
+        }
+      });
+    </script>
+</body>
+</html>

@@ -20,6 +20,7 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
+        <button id="toggle-mode-btn">Toggle Dark Mode</button>
     </header>
     
     <section class="hero">
@@ -130,5 +131,12 @@
       </div>
       <p>&copy; 2025 Dream Home. All rights reserved.</p>
     </footer>
+<script>
+  const btn = document.getElementById('toggle-mode-btn');
+  btn.addEventListener('click', function() {
+    document.body.classList.toggle('dark-mode');
+    btn.textContent = document.body.classList.contains('dark-mode') ? 'Switch to Light Mode' : 'Toggle Dark Mode';
+  });
+</script>
 </body>
 </html>
