@@ -132,11 +132,20 @@
       <p>&copy; 2025 Dream Home. All rights reserved.</p>
     </footer>
 <script>
-  const btn = document.getElementById('toggle-mode-btn');
-  btn.addEventListener('click', function() {
-    document.body.classList.toggle('dark-mode');
-    btn.textContent = document.body.classList.contains('dark-mode') ? 'Switch to Light Mode' : 'Toggle Dark Mode';
-  });
+ // Enhance dark mode: button text is white in dark mode
+ const btn = document.getElementById('toggle-mode-btn');
+btn.addEventListener('click', function() {
+  document.body.classList.toggle('dark-mode');
+  btn.textContent = document.body.classList.contains('dark-mode') ? 'Switch to Light Mode' : 'Toggle Dark Mode';
+
+  // Only change text color for the .hero section
+  const heroSection = document.querySelector('.hero');
+  if (document.body.classList.contains('dark-mode')) {
+    heroSection.style.color = '#fff';
+  } else {
+    heroSection.style.color = '';
+  }
+});
 </script>
 </body>
 </html>

@@ -192,3 +192,6 @@ body.dark-mode .btn {
   background: #444;
   color: #fff;
 }
+body.dark-mode .hero {
+  color: #fff;
+}
